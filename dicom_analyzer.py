@@ -198,7 +198,7 @@ class DicomWorklistTool:
             except:
                 icon_label = tk.Label(
                     title_frame,
-                    text="DICOM",
+                    text="DICOM-X",
                     font=("Segoe UI", 24, "bold"),
                     bg=COLORS["BG_DARK"],
                     fg=COLORS["PRIMARY_GREEN"]
@@ -1315,9 +1315,9 @@ class DicomWorklistTool:
                 self.add_log("🎯 TAG (0032,1064) ENCONTRADA na resposta do PACS!", "INFO")
                 break
         
-        if not found:
-            self.add_log("⚠️ Tag (0032,1064) NÃO encontrada na resposta do PACS", "WARN")
-            self.add_log("💡 O PACS não está enviando a tag Requested Procedure Code Sequence", "INFO")
+        #if not found:
+           # self.add_log("⚠️ Tag (0032,1064) NÃO encontrada na resposta do PACS", "WARN")
+            #self.add_log("💡 O PACS não está enviando a tag Requested Procedure Code Sequence", "INFO")
 
     # ============================================================
     # ERROS
