@@ -44,7 +44,7 @@ COLORS = {
 
 def get_icon_path():
     """Retorna o caminho do ícone"""
-    icon_path = Path(__file__).parent / "pixeon.ico"
+    icon_path = Path(__file__).parent / "icon.ico"
     if icon_path.exists():
         return str(icon_path)
     return None
@@ -234,7 +234,7 @@ class DicomWorklistTool:
         
         version_label = tk.Label(
             header,
-            text="⚡ Powered by Ronaldo",
+            text="⚡ Powered by Ronaldo Basso",
             font=("Segoe UI", 9),
             bg=COLORS["BG_DARK"],
             fg=COLORS["TEXT_MUTED"]
